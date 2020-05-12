@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <style>
+      
+        .container {
+            height: 100%;
+            width: 100%;
+        background: linear-gradient(90deg, rgba(177, 64, 200, 1) 0%, rgba(109, 9, 121, 1) 35%, rgba(45, 1, 62, 1) 100%);
+      }
+      .glow {
+        font-size: 70px;
+        color: #ffffff;
+        text-align: center;
+        display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            height: 600px;
+            text-decoration: solid;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+        }
+        to {
+          text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+      }
+
+     .clue{
+      position: absolute;
+  top: 70%;
+  left: 50%;
+  
+    } 
+button{
+  background-color: rgb(87, 27, 87); 
+  color: black; 
+  border: 0px   rgb(97, 19, 97); 
+}
+.a{
+  background-color: #9554b3; 
+  position: absolute;
+  top: 700%;
+  left: 20%;
+  border: 0px   #9554b3; 
+}
+.audio{
+  position: absolute;
+  
+    top: 100px;
+    left: 550px;
+}
+       .icon{
+        position: absolute;
+  
+  top: 60px;
+  left: 550px;
+       }
+          </style>
+        
+</head>
+    <body>
+
+        <div class="container">
+          
+                <h1 class="glow">Hey what are you waiting for lets start ur hunt </h1>
+                <div class="clue">search  for<button class="button" onclick="myFunction()"> clue</button>
+                <div id="myDIV">  </div></div>
+                <script>
+                function myFunction() {
+                 var x = document.getElementById("myDIV");
+                if (x.innerHTML === "  ") {
+                 x.innerHTML = "go through Wall intersections u may find something";
+                  } else {
+                 x.innerHTML = "go through Wall intersections u may find something";
+                 }
+                }
+                </script>
+         <a href="next.html">C</a>
+
+          <audio class="audio" src="C:\Users\Ashu\Desktop\songs\bday.mp3" controls autoplay></audio>
+         
+        <!-- <div class="icon"> 
+          <div class="ui animated button" tabindex="0">
+            <div class="visible content">play</div>
+            
+              <i class="down arrow icon"></i>
+          
+          </div>
+          </div> -->
+            </div>
+            
+
+    </body>
+
+    </html>
